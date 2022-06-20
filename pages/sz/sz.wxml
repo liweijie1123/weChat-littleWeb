@@ -1,0 +1,3 @@
+<!--pages/sz/sz.wxml-->
+<text>设置页面</text>
+<button  open-type="openSetting"></button>

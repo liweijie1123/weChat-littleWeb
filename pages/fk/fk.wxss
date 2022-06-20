@@ -1,0 +1,261 @@
+/* pages/fk/fk.wxss */
+.log-list {
+  display: flex;
+  flex-direction: column;
+  padding: 40rpx;
+}
+.log-item {
+  margin: 10rpx;
+}
+
+/*用户信息*/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #aaa;
+}
+
+.userinfo-avatar {
+  overflow: hidden;
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.usermotto {
+  margin-top: 100px;
+}
+
+.btn{
+  font-size: 50rpx;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  box-sizing: border-box;
+  font-size: 75rpx;
+}
+.tp{
+  width: 75rpx;
+  height: 75rpx;
+}
+/*垃圾车*/
+.tp2{
+  width: 150rpx;
+  height: 100rpx;
+}
+.che{
+  font-size: 40rpx;
+}
+.btn2{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+  font-size: 38rpx;
+}
+.btn3{
+  font-size: 20rpx;
+}
+
+.cla{
+  margin-top: 10rpx;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.second{
+  width: 50%;
+  background-color: rgb(255, 255, 255);
+  color: rgb(107, 2, 133);
+  height:90rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  box-sizing: border-box;
+}
+.tp3{
+  width: 50rpx;
+  height: 50rpx;
+}
+
+/*驾驶员*/
+.second2{
+  width: 50%;
+  margin-top: 25rpx;
+  background-color: rgb(255, 255, 255);
+  color: rgb(107, 2, 133);
+  height:90rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  box-sizing: border-box;
+  margin-left: 10px;
+}
+.second3{
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  color: rgb(107, 2, 133);
+  height:90rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  box-sizing: border-box;
+}
+
+/*图片上传*/
+.img{
+  display: inline-block;
+}
+ 
+.pic {
+float:left;
+position:relative;
+margin-right:9px;
+margin-bottom:9px;
+}
+ 
+.delete-btn{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+ 
+.weui-uploader{
+  border-left: 1px solid #ccc;
+  padding: 11rpx;
+  margin-left: 11px;
+  margin-right: 14px;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+ 
+ .margin1{
+   margin-left: 10rpx;
+ }
+.lineHeight {
+  width: 95%;
+  margin-right: 10px;
+  line-height: 80rpx;
+  /* border-bottom: 1px solid #ccc; */
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  font-size: 30rpx;
+}
+.lineHeight1{
+  width: 95%;
+  margin-right: 10px;
+  line-height: 80rpx;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  font-size: 30rpx;
+}
+.lineHeight2 {
+  width: 95%;
+  margin-right: 10px;
+  line-height: 80rpx;
+  border-bottom: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  font-size: 30rpx;
+}
+.container {
+  padding: 0;
+  align-items: left;
+  padding-left: 15rpx;
+}
+.numberInfo {
+  font-size: 24rpx;
+  text-indent: 15rpx;
+  border-bottom: 1px solid #ccc;
+}
+ 
+/* .input {
+  display: inline-block;
+  border: 1px solid #ccc;
+  line-height: 80rpx;
+  vertical-align: middle;
+  margin-left: 11%;
+  width: 75%;
+} */
+.input,
+.input-7 ,
+.input-15{
+  margin-left: 7%;
+  display: inline-block;
+  /* border: 1px solid #ccc; */
+  line-height: 80rpx;
+  vertical-align: middle;
+  width: 66%;
+  
+}
+.input{
+  margin-left: 11%;
+}
+ 
+.button {
+  width: 100%;
+  margin-top: 200rpx;
+  
+}
+.select{
+  margin-left: 7%;
+  color: #666;
+}
+ 
+.input-15{
+  margin-left:15%;
+}
+.dw{
+  /* margin-top: 20px; */
+  height: 30px;
+  width: 30px;
+}
+.q{
+  width: 363px;
+  margin-right: 100rpx;
+  margin-left: 22rpx;
+  line-height: 80rpx;
+  font-size: 30rpx;
+  /* float: left; */
+  border-left: 1px solid #ccc;
+  border-bottom:  1px solid #ccc;
+  border-right:  1px solid #ccc;
+  
+}
+.p{
+  float: right;
+  /* margin-right: 10rpx; */
+  margin-top: 10rpx;
+  display: flex;
+  flex-direction: row-reverse;
+  width: 41px;
+  height: 30px;
+  /* border-right:  1px solid #ccc; */
+}
+.image{
+  width: 100rpx;
+  height: 100rpx;
+}
+.ma{
+  margin-top: 51px;
+}
+button{
+  width:80%;
+  margin-top:20rpx;
+  background-color:rgb(213,222,135);
+  color:white;
+  border-radius:98rpx;
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  justify-content:center;
+} 

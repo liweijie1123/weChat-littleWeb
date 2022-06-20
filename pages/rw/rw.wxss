@@ -1,0 +1,250 @@
+/* pages/rw/rw.wxss */
+.btn {
+  background-color: rgb(255, 255, 255);
+    color: black;
+    height: 200rpx;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    border-right: 0rpx solid #efefef;
+    box-sizing: border-box;
+    font-size: 75rpx;
+    margin-left: 0rpx;
+    padding-left: 20rpx;
+}
+
+.newb {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  height: 100rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  border-right: 1rpx solid #efefef;
+  border-bottom: 1rpx solid #efefef;
+  box-sizing: border-box;
+  font-size: 75rpx;
+}
+
+.btn1 {
+  width: 80%;
+  float: left;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  height: 100rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  border-bottom: 1rpx solid #efefef;
+  box-sizing: border-box;
+  font-size: 75rpx;
+  margin-top: 20px;
+  margin-left: 10rpx;
+}
+
+.btn2 {
+  display: flex;
+  float: left;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+  font-size: 35rpx;
+  width: 70%;
+}
+
+.kq {
+  width: 75px;
+  height: 75rpx;
+}
+
+.kq1 {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.btn3 {
+  font-size: 40rpx;
+  margin-left: 10rpx;
+}
+
+button {
+  margin-top: 20rpx;
+  background-color: rgb(213, 222, 135);
+  color: white;
+  border-radius: 98rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.o {
+  margin-top: 50px;
+}
+
+.left1 {
+  float: left;
+  width: 100rpx;
+}
+
+.t {
+  margin-top: 50px;
+}
+
+.right1 {
+  margin-right: 100rpx;
+  float: right;
+  width: 100rpx;
+}
+
+.right {
+  float: right;
+  width: 28%;
+}
+
+.dh {
+  /* float: right; */
+  margin-top: 30px;
+  width: 15%;
+  height: 60rpx;
+}
+
+.xiao {
+  float: right;
+  width: 15%;
+  height: 10px;
+}
+
+.rabbish {
+  width: 30%;
+  font-size: 35rpx;
+  margin-top: 48rpx;
+}
+
+.xx {
+  width: 60%;
+  margin-left: 0px;
+  font-size: 35rpx;
+}
+
+.xx1 {
+  width: 43%;
+  margin-left: 5px;
+  font-size: 35rpx;
+}
+
+button::after {
+  border: none;
+}
+
+
+.icon {
+  height: 101rpx;
+    width: 23%;
+}
+
+.tip {
+  height: 80rpx;
+  width: 15%
+}
+
+.tip0 {
+  height: 65rpx;
+  width: 9%;
+  margin-top: 15rpx;
+  margin-left: 2%;
+}
+
+.tip1 {
+  height: 80rpx;
+  width: 11%;
+  margin-top: 13rpx;
+}
+
+.tip11 {
+  height: 60rpx;
+  width: 12%;
+  margin-top: 13rpx;
+  margin-left: 210rpx;
+
+}
+.tip111 {
+  height: 80rpx;
+  width: 11%;
+  margin-top: 13rpx;
+  margin-left: 8px;
+}
+
+.tip2 {
+  height: 61rpx;
+    width: 9%;
+    margin-top: 15rpx;
+    margin-left: 80rpx;
+    margin-right: 30rpx;
+}
+
+.newb1 {
+  background-color: rgb(250, 255, 255);
+  margin-left: 23rpx;
+  width: 95%;
+  color: black;
+  height: 88rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border: 1rpx solid #efefef;
+  border-radius: 20rpx;
+  box-sizing: border-box;
+  font-size: 75rpx;
+}
+
+.image {
+  margin-top: 35rpx;
+  margin-left: 145rpx;
+  width: 104rpx;
+  height: 90rpx;
+}
+
+.image1 {
+  margin-top: 20rpx;
+  margin-left: 80rpx;
+  width: 97rpx;
+  height: 88rpx;
+}
+
+.che {
+  width: 80rpx;
+  height: 80rpx;
+  margin-left: 12rpx;
+}
+
+#ttip1 {
+  margin-left: 240rpx;
+}
+
+#ttipp2 {
+  margin-left: 240rpx;
+}
+
+#text1 {
+  font-size: 40rpx;
+  margin-bottom: 20rpx;
+  margin-left: 0rpx;
+}
+.bg{
+  width: 100%;
+  height: 100%;
+  background-color: rgb(241, 240, 240);
+  position: absolute;
+}
+.cx{
+  background-color: rgb(241, 240, 240);
+  width: 95%;
+    height: 170rpx;
+    margin-left: 20rpx;
+    border-radius: 30rpx;
+}

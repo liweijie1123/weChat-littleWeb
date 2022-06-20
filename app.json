@@ -1,0 +1,76 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/logs/logs",
+        "pages/kq/kq",
+        "pages/rw/rw",
+        "pages/dl/dl",
+        "pages/tz/tz",
+        "pages/fk/fk",
+        "pages/sz/sz",
+        "pages/work/work",
+        "pages/xx/xx",
+        "pages/lyjb/lyjb",
+        "pages/csjb/csjb",
+        "pages/cstk/cstk",
+        "pages/yhjb/yhjb",
+        "pages/tmap/tmap",
+        "pages/cd/cd",
+        "pages/cd2/cd2",
+        "pages/finish/finish",
+        "pages/histroy/histroy",
+        "pages/tongz/tongz",
+        "pages/tmap2/tmap2",
+        "pages/jian/jian",
+        "pages/router/router"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#ededed",
+        "navigationBarTitleText": "Weixin",
+        "navigationBarTextStyle": "black"
+    },
+    "style": "v2",
+    "navigationBarBackgroundColor": "#ededed",
+    "sitemapLocation": "sitemap.json",
+    "tabBar": {
+        "borderStyle":"white",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "iconPath": "pages/image/2/home.png",
+                "text": "首页",
+                "selectedIconPath": "pages/image/2/home2.png"
+            },
+            {
+                "pagePath": "pages/rw/rw",
+                "text": "工作",
+                "iconPath": "pages/image/2/work.png",
+                "selectedIconPath": "pages/image/2/work2.png"
+            },
+            {
+                "pagePath": "pages/logs/logs",
+                "text": "我的",
+                "iconPath": "pages/image/2/my.png",
+                "selectedIconPath": "pages/image/2/my2.png"
+            }
+        ]
+    },
+    "permission": {
+        "scope.userLocation": {
+            "desc": "你的位置信息将用于小程序定位",
+            "status": 404,
+            "message": "错误的请求路径"
+        }
+    },
+    "plugins": {
+        "routePlan": {
+            "version": "1.0.18",
+            "provider": "wx50b5593e81dd937a"
+        },
+        "chooseLocation": {
+            "version": "1.0.9",
+            "provider": "wx76a9a06e5b4e693e"
+        }
+    }
+}

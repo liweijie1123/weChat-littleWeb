@@ -1,0 +1,67 @@
+<!--pages/dl/dl.wxml-->
+<div id="margin">
+<text class="welcome">欢迎使用守护者</text>
+<view class="view">
+    <text class="text1">1.小程序首页</text>
+    <image src='https://s2.loli.net/2022/03/20/DY5NXrmo8HEpV1x.png' class="image"></image>
+</view>
+
+<view class="view">
+<text class="text1">2.司机可在首页考勤处进行每日签到打卡</text>
+<image src='https://s2.loli.net/2022/03/20/mzSx5XDsVNdo41C.png' class="image"></image>
+</view>
+
+<view class="view">
+<text class="text1">3.司机可通过首页消息处查看消息</text>
+<image src='https://s2.loli.net/2022/03/20/x7qzDHabYL8dGk1.png' class="image"></image>
+</view>
+
+<view class="view">
+<text class="text1">4.首页具有单独的导航功能</text>
+<image src='https://s2.loli.net/2022/03/20/RGtje2ipWDxk5TV.png' class="image"></image>
+</view>
+
+<view class="view">
+<text class="text1">5.司机可在首页的反馈处反馈工作中遇到的问题</text>
+<image src='https://s2.loli.net/2022/03/20/5pjaiCVuId4wZ3X.png' class="image"></image>
+</view>
+
+<view class="view">
+    <text class="text1">6.司机在此处查看小程序授权情况</text>
+    <image src='https://s2.loli.net/2022/03/20/xZeKYPwGBavjdk3.png' class="image"></image>
+</view>
+
+<view class="view">
+    <text class="text1">7.司机工作界面</text>
+<image src='https://s2.loli.net/2022/03/20/rBoxcLW2X517Ik3.png' class="image"></image>
+</view>
+
+<view class="view">
+    <text class="text1">8.点位右侧第一个按钮将为司机进入路线规划页面</text>
+<image src='https://s2.loli.net/2022/03/20/KYPIzmrCwd8JEfO.png' class="image"></image>
+<image src='https://s2.loli.net/2022/03/20/twnqU6miX2aH8lV.png' class="image"></image>
+</view>
+
+
+<view class="view">
+    <text class="text1">9.司机可点击点位右侧第二个按钮确认完成作业点</text>
+<image src='https://s2.loli.net/2022/03/20/LZ1dJqIpUWNuShE.png' class="image"></image>
+</view>
+
+<view class="view">
+    <text class="text1">10.工作界面下方能查看历史任务界面</text>
+<image src='https://s2.loli.net/2022/03/20/UowyJgQNMidvrCR.png' class="image"></image>
+<image src='https://s2.loli.net/2022/03/20/prjKG1yZBIe6UNA.png' class="image"></image>
+</view>
+
+<view class="view">
+    <text class="text1">11.工作界面下方能修改当天任务点位顺序</text>
+<image src='https://s2.loli.net/2022/03/20/HImj1SWF4BuUeld.png' class="image"></image>
+</view>
+
+<view class="view">
+    <text class="text1">12.司机可在我的页面查看车辆信息和自己的信息</text>
+<image src='https://s2.loli.net/2022/03/20/uaVyTiglj4HZSGp.png' class="image"></image>
+</view>
+
+</div>

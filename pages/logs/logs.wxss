@@ -1,0 +1,52 @@
+image {
+  width: 50rpx;
+  height: 50rpx;
+}
+page {
+  background-color:#ededed ;
+}
+.g-bd {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 74rpx;
+}
+
+.m-bd {
+  width: 95%;
+  background-color: white;
+  border: 1px solid white;
+  border-radius:10px ;
+  margin-top: 20rpx;
+}
+.m-bd>view {
+  margin-top:10rpx;
+  margin-left:20rpx ;
+}
+.m-bd_hd>text {
+  font-size: 37rpx;
+  margin-left: 10rpx;
+}
+.m-bd_hd {
+  display: flex;
+  margin-left: 10rpx;
+  border-bottom:0.5px solid #dddddd;
+}
+.m-bd_hd>view {
+  padding: 4px;
+  font-size: 38rpx;
+  margin-left:8rpx ;
+}
+.m-bd>view>text {
+  margin-left: 23rpx;
+  font-size: 17px;
+  color: #818181;
+}
+.m-bd>view {
+  height: 75rpx;
+  display: flex;
+  align-items: center;
+}
+em {
+  flex: 1;
+}

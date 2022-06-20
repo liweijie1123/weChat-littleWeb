@@ -1,0 +1,114 @@
+<!--pages/rw/rw.wxml-->
+<view class="bg">
+<view class="btn" style="margin-left:15rpx;margin-top: 30rpx;border-bottom: 1rpx solid #fff;border-radius: 30rpx;width: 95%;background-color: rgb(220,255,255);">
+    <!-- <image src="/pages/image/rw2.png" class="kq"></image> -->
+    <image src='/pages/image/icon.png' class="icon"></image>
+<view class="btn2">
+    <text>12月10日</text>
+    <text>市中心街道</text>
+</view>
+<text class="rabbish">厨余垃圾</text>
+</view>
+
+<view style="font-size: 30rpx;margin-left: 40rpx;margin-top: 20rpx;">
+<text >今日站点顺序如下:</text></view>
+
+<view class="newb1" style="margin-top: 25rpx;">
+<view>
+  </view>
+    <view class="xx">
+    <text style="font-size: 17px;margin-left: 114rpx;color: gray;">临平公园</text>
+    </view>
+    <image src='/pages/image/dh1.png' class="tip1" bindtap="goto1"></image>
+    <image src='/pages/image/fi.png' class="tip2" bindtap="showok"></image>
+    <modal title="您是否确定完成对该地区的作业？" hidden="{{modalHidden}}" bindconfirm="modalConfirm" bindcancel="modalCandel">
+ </modal>
+</view>
+<view><image src='/pages/image/c.png' style="width: 50rpx;height: 50rpx;margin-left: 100px;"></image></view>
+
+<view class="newb1">
+<view>
+    </view>
+    <view class="xx">
+    <text style="font-size: 17px;margin-left: 114rpx;color: gray;">购物中心</text>
+    </view>
+    <image src='/pages/image/dh1.png' class="tip1" bindtap="goto11"></image>
+    <image src='/pages/image/fi.png' class="tip2" bindtap="showok"></image>
+    <modal title="您是否确定完成对该地区的作业？" hidden="{{modalHidden}}" bindconfirm="modalConfirm" bindcancel="modalCandel">
+ </modal>
+</view>
+<view><image src='/pages/image/c.png' style="width: 50rpx;height: 50rpx;margin-left: 100px;"></image></view>
+
+
+
+<view class="newb1">
+<view>
+    <image src="/pages/image/c1.png" class="che"></image>
+    </view>
+    <view class="xx1">
+
+    <text style="font-size: 17px;margin-left: 4px;color:green">武陵社区</text>
+    </view>
+    <image src='/pages/image/dh0.png' class="tip111" bindtap="goto11"></image>
+    <image src='/pages/image/fn.png' class="tip2" bindtap="showok"></image>
+    <modal title="您是否确定完成对该地区的作业？" hidden="{{modalHidden}}" bindconfirm="modalConfirm" bindcancel="modalCandel">
+ </modal>
+</view>
+<view><image src='/pages/image/next2.png' style="width: 50rpx;height: 50rpx;margin-left: 100px;"></image></view>
+
+
+<!-- 
+<view class="newb1"> -->
+<!-- <view>
+    </view>
+    <view class="xx">
+    <text style="font-size: 40rpx;margin-left: 150rpx;">武陵社区</text></view>
+    <!-- <view><image src="/pages/image/c1.png" class="che"></image></view> -->
+   <!-- <image src='/pages/image/dh0.png'  id="ttip1" class="tip11" bindtap="goto1"></image>
+    <image src='/pages/image/finsihn.png'  id="ttip2" class="tip2" bindtap="showok"></image>
+    <modal title="您是否确定完成对该地区的作业？" hidden="{{modalHidden}}" bindconfirm="modalConfirm" bindcancel="modalCandel">
+ </modal>
+</view>
+<view><image src='/pages/image/next2.png' style="width: 50rpx;height: 50rpx;margin-left: 200rpx;"></image></view> -->
+
+<view class="newb1">
+<view>
+    </view>
+    <view class="xx">
+    <text style="font-size: 17px;margin-left: 44px;">莱蒙商业中心</text>
+    </view>
+    <image src='/pages/image/dh1.png' class="tip1" bindtap="goto1"></image>
+    <image src='/pages/image/fi.png' class="tip2" bindtap="showok"></image>
+    <modal title="您是否确定完成对该地区的作业？" hidden="{{modalHidden}}" bindconfirm="modalConfirm" bindcancel="modalCandel">
+ </modal>
+</view>
+<view><image src='/pages/image/next2.png' style="width: 50rpx;height: 50rpx;margin-left: 100px;"></image></view>
+
+<view class="newb1">
+<view>
+    </view>
+    <view class="xx">
+    <text style="font-size: 17px;margin-left: 114rpx;">人民广场</text>
+    </view>
+    <image src='/pages/image/dh1.png' class="tip1" bindtap="goto1"></image>
+    <image src='/pages/image/fi.png' class="tip2" bindtap="showok"></image>
+    <modal title="您是否确定完成对该地区的作业？" hidden="{{modalHidden}}" bindconfirm="modalConfirm" bindcancel="modalCandel">
+ </modal>
+</view>
+<view>
+<view style="margin-top: 46rpx;">
+<view style="float: left;width: 49%;margin-left:9rpx;border-right: 1rpx solid #b39f9f;">
+<view>
+<image src="/pages/image/rw-2.png" class="image" bindtap="gotohis"></image>
+</view>
+<text style="margin-left: 130rpx;">历史任务</text>
+</view>
+
+<view style="float: right;width: 49%;margin-top: 20rpx;">
+<view style="margin-left: 45rpx;">
+<image src="/pages/image/rw-1.png" class="image1" bindtap="gotosz"></image>
+</view>
+<text style="margin-left: 88rpx;margin-top: 100rpx;">修改作业顺序</text>
+</view></view></view>
+<view class="cx"></view>
+</view>

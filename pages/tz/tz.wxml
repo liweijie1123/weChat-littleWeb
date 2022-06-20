@@ -1,0 +1,8 @@
+<!--pages/tz/tz.wxml-->
+<!--index.wxml-->
+<!--index.wxml-->
+<view class="container">
+  <button bindtap="showMap">选择位置</button>
+  <view style="margin-top:10px">地址：{{address?address:"暂无"}}</view>
+  <view style="margin-top:10px">名称：{{locationName?locationName:"暂无"}}</view>
+</view>

@@ -1,0 +1,110 @@
+/* pages/histroy/histroy.wxss */
+/* pages/rw/rw.wxss */
+.btn{
+  margin-top: 10px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    height: 90rpx;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    border-bottom: 1rpx solid #efefef;
+    box-sizing: border-box;
+    font-size: 75rpx;
+  }
+  .time{
+    margin-left: 6px;
+    font-size: 33rpx;
+    background-color: gray;
+    border-radius: 15rpx;
+  }
+  .type{
+    margin-left: 55px;
+    font-size: 33rpx;
+    background-color: gray;
+    border-radius: 15rpx;
+  }
+  .fg{
+    border-bottom: 2px solid #eee;
+    width: 85%;
+    margin-left: 31px;
+  }
+  .str{
+    margin-left: 47px;
+    font-size: 33rpx;
+    background-color: gray;
+    border-radius: 15rpx;
+  }
+.btn2{
+  width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    font-size: 29rpx;
+    margin-left: 69rpx;
+ }
+ .btn22{
+  width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    font-size: 29rpx;
+    
+ }
+ .jdd{
+  font-size: 29rpx;
+    width: 28%;
+    margin-left: 9px;
+ }
+  .kq{
+    margin-left: 15rpx;
+    width: 110rpx;
+    height: 105rpx;
+  }
+.btn3{
+    font-size: 40rpx;
+    margin-left: 10rpx;
+}
+.btn33{
+  font-size: 40rpx;
+  margin-left: 10rpx;
+}
+.o{
+  float: left;
+  width:40%;
+}
+.t{
+  float:right;
+  width: 40%;
+}
+.his{
+  width:50%;
+  /* margin-left: 200rpx; */
+  font-size: 35rpx;
+}
+.his1{
+  width:50%;
+  /* margin-left: 200rpx; */
+  font-size: 35rpx;
+}
+.logo{
+  float: left;
+  width: 50rpx;
+  height: 50rpx;
+  margin-top: 450rpx;
+  margin-left: 250rpx;
+}
+.swz{
+  float: right;
+  margin-top: 455rpx;
+  margin-right: 200rpx;
+}
+.jd{
+  margin-left: 95rpx;
+}
+.jd1{
+  margin-left: 75rpx;
+}

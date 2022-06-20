@@ -1,0 +1,70 @@
+<!--pages/fk/fk.wxml-->
+
+<view class="second2"><image src="/pages/image/su.png" class="tp" bindtap="goto2"></image>
+<view>
+    <text class="che">建议和投诉</text>
+</view>
+</view>
+
+ 
+<view class="container">
+ 
+  <view class="lineHeight" type="text">
+      <view class="section">
+  </view>
+  </view>
+
+  <view class="lineHeight" type="text"><text class="margin1">问题描述:</text>
+      <input class='input-7' placeholder='问题描述'></input>
+  </view>
+  <view class="lineHeight1" type="text">
+      <input class='input-7' placeholder=''></input>
+  </view>
+  <view class="lineHeight1" type="text">
+      <input class='input-7' placeholder=''></input>
+  </view>
+  <view class="lineHeight1" type="text">
+      <input class='input-7' placeholder=''></input>
+  </view>
+  <view class="lineHeight1" type="text">
+      <input class='input-7' placeholder=''></input>
+  </view>
+  <view class="lineHeight1" type="text">
+      <input class='input-7' placeholder=''></input>
+  </view>
+  <view class="lineHeight2" type="text">
+      <input class='input-7' placeholder=''></input>
+  </view>
+</view>
+
+<view class="weui-uploader">
+  <view>
+    <view class='pic' wx:for="{{imgs}}" wx:for-item="item" wx:key="*this">
+        <image class='weui-uploader__img '
+                src="{{item}}"
+                data-index="{{index}}" mode="aspectFill" bindtap="previewImg">
+                  <icon type='cancel' class="delete-btn" data-index="{{index}}" catchtap="deleteImg"></icon>
+        </image>
+    </view>
+      <!-- 用来提示用户上传图片 -->
+      <!-- <view class="weui-uploader__input-box pic" bindtap="chooseImg"> </view> -->
+  </view>
+  <image src='/pages/image/add.png' bindtap="chooseImg" class='image'></image>
+  <view type="text">
+      <input class='input-7' placeholder=''></input>
+  </view>
+  <view type="text">
+      <input class='input-7' placeholder=''></input>
+  </view>
+</view>
+
+<view class="mar">
+  <view class="q"><text class="margin1">地址：{{address?address:"请输入地址"}}{{locationName?locationName:""}}</text>
+  <image src='/pages/image/d.png' class="p" bindtap="showMap"></image>
+  </view>
+</view>
+
+<button class="button" bindtap="buttonTap">提交</button>
+  <modal title="建议投诉" hidden="{{modalHidden}}" bindconfirm="modalConfirm" bindcancel="modalCandel">
+    信息将提交至管理系统，确认要提交嘛？
+ </modal>

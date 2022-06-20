@@ -1,0 +1,89 @@
+<view class="page" hover-class="none" hover-stop-propagation="false" style="width: 100%; height: 100%;">
+
+<map id="map" longitude="120.295556" latitude="30.420219" markers="{{markers}}" scale="14" show-location
+  style="width: 100%; height: 100%;" bindregionchange="bindregionchange" bindtap="bindtapMap"></map>
+
+</view>
+<!-- <view style="width: 40%;float: left;margin-left: 70rpx;">
+<view style="margin-left: 40rpx;margin-top: 50rpx；">
+      <image src="/pages/image/rwd.png" class="rwd"></image>
+      <view>临平公园</view>
+    </view>
+</view>
+<view class="fin">
+10:15完成作业
+</view>
+
+
+
+<view style="width: 40%;float: left;margin-left: 70rpx;">
+<view style="margin-left: 40rpx;margin-top: 30rpx;">
+      <image src="/pages/image/rwd.png" class="rwd"></image>
+      <view>武陵社区</view>
+    </view>
+</view>
+<view class="fin1">
+10:59完成作业
+</view>
+
+
+<view style="width: 40%;float: left;margin-left: 70rpx;">
+<view style="margin-left: 40rpx;margin-top: 30rpx;">
+      <image src="/pages/image/rwd.png" class="rwd"></image>
+      <view>购物中心</view>
+    </view>
+</view>
+<view class="fin1">
+12:28完成作业
+</view>
+
+
+<view style="width: 40%;float: left;margin-left: 70rpx;">
+<view style="margin-left: 40rpx;margin-top: 30rpx;">
+      <image src="/pages/image/rwd.png" class="rwd"></image>
+      <view>人民广场</view>
+    </view>
+</view>
+<view class="fin1">
+13:29完成作业
+</view>
+
+
+
+<view style="width: 40%;float: left;margin-left: 70rpx;">
+<view style="margin-left: 40rpx;margin-top: 30rpx;">
+      <image src="/pages/image/rwd.png" class="rwd"></image>
+      <view>商业中心</view>
+    </view>
+</view>
+<view class="fin1">
+14:31完成作业
+</view> -->
+<view style="margin-left: 1px;">
+<view class="xuh">
+<view class="index00">序号</view>
+  <view style="border-bottom: 2px solid #ededed;height: 30px;margin-top: 10px;"><text class="content00">1</text></view>
+  <view style="border-bottom: 2px solid #ededed;height: 30px;margin-top: 10px;"><text class="content00">2</text></view>
+  <view style="border-bottom: 2px solid #ededed;height: 30px;margin-top: 10px;"><text class="content00">3</text></view>
+  <view style="border-bottom: 2px solid #ededed;height: 30px;margin-top: 10px;"><text class="content00">4</text></view>
+  <view style="border-bottom: 2px solid #ededed;height: 30px;margin-top: 10px;"><text class="content00">5</text></view>
+</view>
+<view class="left">
+  <view class="indexl">站点</view>
+  <view style="border-bottom: 2px solid #ededed;margin-top: 10px;height: 30px;"><text class="content">临平公园</text></view>
+  <view style="border-bottom: 2px solid #ededed;margin-top: 10px;height: 30px;"><text class="content">武陵社区</text></view>
+  <view style="border-bottom: 2px solid #ededed;margin-top: 10px;height: 30px;"><text class="content">购物中心</text></view>
+ 
+  <view style="border-bottom: 2px solid #ededed;margin-top: 10px;height: 30px;"><text class="content">人民广场</text></view>
+  <view style="border-bottom: 2px solid #ededed;margin-top: 10px;height: 30px;"><text class="content1">莱蒙商业中心</text></view>
+</view>
+<view class="right">
+  <view class="indexr">完成时间</view>
+  <view style="border-bottom: 2px solid #ededed;margin-top: 10px;height: 30px;"><text class="content0">12:09</text></view>
+  <view style="border-bottom: 2px solid #ededed;margin-top: 10px;height: 30px;"><text class="content0">12:45</text></view>
+  <view style="border-bottom: 2px solid #ededed;margin-top: 10px;height: 30px;"><text class="content0">13:06</text></view>
+  <view style="border-bottom: 2px solid #ededed;margin-top: 10px;height: 30px;"><text class="content0">14:02</text></view>
+  <view style="border-bottom: 2px solid #ededed;margin-top: 10px;height: 30px;"><text class="content0">14:38</text></view>
+  
+</view>
+</view>
