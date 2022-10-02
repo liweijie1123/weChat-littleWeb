@@ -1,0 +1,84 @@
+<view class="g-index">
+    <view class="bg">
+    </view>
+    <view class="g-bd">
+        <view class="m-bd">
+            <view class="m-bd_hd">
+                <image src="{{img[0]}}" style="height: 60rpx; width:60rpx;"></image>
+                <view>车辆信息</view>
+            </view>
+            <view>
+                <image src="{{img[1]}}"></image>
+                <text>车牌:</text>
+                <view wx:for="{{car}}" wx:key="driver_id" wx:if="{{item.vehicle_id==1001}}">
+                    <view class="newtext">{{item.vehicle_number}}</view>
+                </view>
+            </view>
+            <view>
+                <image src="{{img[2]}}"></image>
+                <text>ID:</text>
+                <view wx:for="{{car}}" wx:key="driver_id" wx:if="{{item.vehicle_id==1001}}">
+                    <view class="newtext">{{item.vehicle_id}}</view>
+                </view>
+            </view>
+            <view>
+                <image src="{{img[3]}}"></image>
+                <text>类型:</text>
+                <view wx:for="{{car}}" wx:key="driver_id" wx:if="{{item.vehicle_id==1001}}">
+                    <view class="newtext">{{item.vehicle_kind}}</view>
+                </view>
+            </view>
+            <view>
+                <image src="{{img[4]}}"></image>
+                <text>车辆核载:</text>
+                <view wx:for="{{car}}" wx:key="driver_id" wx:if="{{item.vehicle_id==1001}}">
+                    <view class="newtext">{{item.vehicle_load}}</view>
+                </view>
+            </view>
+            <view>
+                <image src="{{img[5]}}"></image>
+                <text>车辆检修日期:</text>
+                <view wx:for="{{car}}" wx:key="driver_id" wx:if="{{item.vehicle_id==1001}}">
+                    <view class="newtext">{{item.vehicle_time}}</view>
+                </view>
+            </view>
+        </view>
+        <view class="m-bd">
+            <view class="m-bd_hd">
+                <image src="{{img[6]}}"></image>
+                <view>司机信息</view>
+            </view>
+            <view>
+                <image src="{{img[7]}}"></image>
+                <text>司机:</text>
+                <view wx:for="{{driver}}" wx:key="driver_id" wx:if="{{item.driver_id==10001}}">
+                    <view class="newtext">{{item.driver_name}}</view>
+                </view>
+            </view>
+            <view>
+                <image src="{{img[8]}}"></image>
+                <text>工号:</text>
+                <view wx:for="{{driver}}" wx:key="driver_id" wx:if="{{item.driver_id==10001}}">
+                    <view class="newtext">{{item.driver_id}}</view>
+                </view>
+            </view>
+            <view>
+                <image src="{{img[9]}}" class="tp3" bindtap="goto2"></image>
+                <text>口罩:</text>
+                <view class="newtext">已正常佩戴口罩</view>
+            </view>
+            <view class="second3">
+                <image src="{{img[10]}}"></image>
+                <text>体温:</text>
+                <view class="newtext">36.5°C</view>
+            </view>
+            <view>
+                <image src="{{img[11]}}"></image>
+                <text>联系方式:</text>
+                <view wx:for="{{driver}}" wx:key="driver_id" wx:if="{{item.driver_id==10001}}">
+                    <view class="newtext">{{item.driver_telephone}}</view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

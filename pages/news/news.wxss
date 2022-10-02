@@ -1,0 +1,88 @@
+/* pages/xx/xx.wxss */
+page {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.navbar {
+    flex: none;
+    display: flex;
+    background: #fff;
+}
+
+.navbar .item {
+    position: relative;
+    flex: auto;
+    text-align: center;
+    line-height: 80rpx;
+}
+
+.navbar .item.active {
+    color: #FFCC00;
+}
+
+.navbar .item.active:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 4rpx;
+    background: #FFCC00;
+}
+
+.second3 {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    color: rgb(53, 52, 52);
+    height: 130rpx;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    border-bottom: 1rpx solid #efefef;
+}
+
+.tp3 {
+    width: 98rpx;
+    height: 85rpx;
+    margin-left: 20rpx;
+}
+
+.tp4 {
+    width: 29rpx;
+    height: 29rpx;
+    margin-right: 20rpx;
+}
+
+.cla {
+    margin-top: 15rpx;
+    display: flex;
+    flex-wrap: wrap;
+    border-left: 1rpx solid #efefef;
+    border-top: 1rpx solid #efefef;
+}
+
+.btn2 {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    font-size: 35rpx;
+    margin-left: 20rpx;
+    width: 30%;
+}
+
+.btn3 {
+    color: gray;
+    font-size: 24rpx;
+}
+
+.second4 {
+    width: 65%;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 20rpx;
+}

@@ -1,19 +1,18 @@
 // pages/xx/xx.js
 Page({
-    
+
     /**
      * 页面的初始数据
      */
     data: {
-        navbar: ['作业', '通知'],
-        currentTab: 0
+
     },
 
     /**
      * 生命周期函数--监听页面加载
      */
     onLoad: function (options) {
-        
+
     },
 
     /**
@@ -63,27 +62,5 @@ Page({
      */
     onShareAppMessage: function () {
 
-    },
-    navbarTap: function(e){
-        this.setData({
-          currentTab: e.currentTarget.dataset.idx
-        })
-      }
-    ,goto1:function(){
-        wx.navigateTo({
-          url: '/pages/cstk/cstk',
-        })
-    },goto2:function(){
-        wx.navigateTo({
-          url: '/pages/csjb/csjb',
-        })
-    },goto3:function(){
-        wx.navigateTo({
-          url: '/pages/yhjb/yhjb',
-        })
-    },goto4:function(){
-        wx.navigateTo({
-          url: '/pages/lyjb/lyjb',
-        })
     }
 })

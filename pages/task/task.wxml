@@ -1,0 +1,38 @@
+<view class="bg">
+    </view>
+<view class="index">
+    <van-toast id="van-toast" />
+    <view class="head">
+        <van-row>
+            <van-col span="4">
+                <image src="../image/tack.svg"></image>
+            </van-col>
+            <van-col span="7">
+                <view class="date">{{date}}</view>
+                <view class="street">{{street}}</view>
+            </van-col>
+            <van-col span="16" offset="10" style="text-align:center; display: flex; justify-content: center;">
+                <image src="../image/chuyu.svg"></image>
+                <view class="rubbish">{{rubbish}}</view>
+            </van-col>
+        </van-row>
+    </view>
+    <view class="task" style="text-align: center;">
+        <van-steps steps="{{ steps }}" active="{{ active }}" direction="vertical" click-step="next"  active-color="#1989fa"/>
+    </view>
+    <view class="task_1">
+        <van-circle value="{{ value }}" size="150" layer-color="#eeeeee" color="#1989fa" text="任务已完成{{value}}%" stroke-width="12"/>
+    </view>
+    <view class="foot" style="text-align: center;">
+        <van-button round type="danger" bindtap="tack" size="normal" disabled="{{disabled}}"> 打卡 </van-button>
+        <van-row>
+            <van-col span="12" style="text-align: center;">
+                <van-button round type="info" bindtap="history">查看历史记录</van-button>
+            </van-col>
+            <van-col span="12" style="text-align: center;">
+                <van-button round type="info" bindtap="change">更改点位顺序</van-button>
+            </van-col>
+        </van-row>
+    </view>
+
+</view>

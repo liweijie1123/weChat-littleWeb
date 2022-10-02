@@ -1,0 +1,54 @@
+<!-- pages/dl/dl.wxml -->
+<div id="margin">
+    <text class="welcome">欢迎使用守护者</text>
+    <view class="view">
+        <text class="text1">{{text[0]}}</text>
+        <image src='{{img[0]}}' class="image"></image>
+    </view>
+    <view class="view">
+        <text class="text1">{{text[1]}}</text>
+        <image src='{{img[1]}}' class="image"></image>
+    </view>
+    <view class="view">
+        <text class="text1">{{text[2]}}</text>
+        <image src='{{img[2]}}' class="image"></image>
+    </view>
+    <view class="view">
+        <text class="text1">{{text[3]}}</text>
+        <image src='{{img[3]}}' class="image"></image>
+    </view>
+    <view class="view">
+        <text class="text1">{{text[4]}}</text>
+        <image src='{{img[4]}}' class="image"></image>
+    </view>
+    <view class="view">
+        <text class="text1">{{text[5]}}</text>
+        <image src='{{img[5]}}' class="image"></image>
+    </view>
+    <view class="view">
+        <text class="text1">{{text[6]}}</text>
+        <image src='{{img[6]}}' class="image"></image>
+    </view>
+    <view class="view">
+        <text class="text1">{{text[7]}}</text>
+        <image src='{{img[7]}}' class="image"></image>
+        <image src='{{img[8]}}' class="image"></image>
+    </view>
+    <view class="view">
+        <text class="text1">{{text[8]}}</text>
+        <image src='{{img[9]}}' class="image"></image>
+    </view>
+    <view class="view">
+        <text class="text1">{{text[9]}}</text>
+        <image src='{{img[10]}}' class="image"></image>
+        <image src='{{img[11]}}' class="image"></image>
+    </view>
+    <view class="view">
+        <text class="text1">{{text[10]}}</text>
+        <image src='{{img[12]}}' class="image"></image>
+    </view>
+    <view class="view">
+        <text class="text1">{{text[11]}}</text>
+        <image src='{{img[13]}}' class="image"></image>
+    </view>
+</div>

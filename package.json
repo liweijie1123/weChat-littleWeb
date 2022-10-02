@@ -1,0 +1,14 @@
+{
+  "name": "dirver",
+  "version": "1.0.0",
+  "description": "https://www.bilibili.com/video/BV1tp4y1t7Fx\r ### 项目文件结构\r     CUG_Campus-navigation\r     ├── pages\r     │   ├── home\r     │   │   ├── home.js\r     │   │   ├── home.json\r     │   │   ├── home.wxml\r     │   │   ├── home.wxss\r     │   ├── home2\r     │   │   ├── home2.js\r     │   │   ├── home2.json\r     │   │   ├── home2.wxml\r     │   │   ├── home2.wxss\r     ├── utils\r     ├── app.js\r     ├── app.json\r     ├── app.wxss\r     ├── project.config.json\r     ├── qqmap-wx-jssdk.js\r ## 🐱‍🏍项目效果\r <p float=\"center\">\r   <img src=\"readme/1.png\" width=\"400\" />\r   <img src=\"readme/2.png\" width=\"400\" /> \r </p>\r <p float=\"left\">\r   <img src=\"readme/3.png\" width=\"400\" />\r   <img src=\"readme/4.png\" width=\"400\" /> \r </p>",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vant/weapp": "^1.10.3"
+  }
+}

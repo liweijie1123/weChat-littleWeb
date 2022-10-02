@@ -1,13 +1,2 @@
-<!--pages/rw/rw.wxml-->
-<view class="btn" bindtap="goto2"><image src="/pages/image/rw2.png" class="kq"></image>
-<view class="btn2">
-    <text>12.10(今天)</text>
-    <text class="btn3">待完成</text>
-</view>
-  </view>
-
-
-
-
-
-
+<!--pages/work/work.wxml-->
+<text>pages/work/work.wxml</text>

@@ -1,0 +1,34 @@
+page {
+  background-color: #fafafa;
+}
+.index {
+  margin: 22px  17px 17px;
+}
+.head {
+  font-size: 13px;
+  color: #666666;
+  margin-bottom: 20px;
+}
+.input {
+  height: 150px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding: 2px;
+}
+.image>view {
+  font-size: 13px;
+  margin-bottom:20px;
+  color: #666666;
+}
+.image>view:nth-child(2){
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 10px;
+}
+.image>view>text:nth-child(2){
+  color: red;
+}
+.post {
+  margin-top: 15%;
+}

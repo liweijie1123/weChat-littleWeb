@@ -1,28 +1,28 @@
 {
-    "pages": [
+        "pages": [
         "pages/index/index",
-        "pages/logs/logs",
-        "pages/kq/kq",
-        "pages/rw/rw",
-        "pages/dl/dl",
-        "pages/tz/tz",
-        "pages/fk/fk",
+        "pages/my/my",
+        "pages/check/check",
+        "pages/task/task",
+        "pages/feedback/feedback",
         "pages/sz/sz",
         "pages/work/work",
         "pages/xx/xx",
-        "pages/lyjb/lyjb",
-        "pages/csjb/csjb",
-        "pages/cstk/cstk",
-        "pages/yhjb/yhjb",
+        "pages/oil_leak_alarm/oil_leak_alarm",
+        "pages/overspeed_alarm/overspeed_alarm",
+        "pages/overtime_parking/overtime_parking",
+        "pages/user_report/user_report",
         "pages/tmap/tmap",
         "pages/cd/cd",
-        "pages/cd2/cd2",
-        "pages/finish/finish",
-        "pages/histroy/histroy",
-        "pages/tongz/tongz",
+        "pages/modify_point_sequence/modify_point_sequence",
+        "pages/task_completion/task_completion",
+        "pages/historical_task/historical_task",
         "pages/tmap2/tmap2",
         "pages/jian/jian",
-        "pages/router/router"
+        "pages/router/router",
+        "pages/about/about",
+        "pages/news/news",
+        "pages/help/help"
     ],
     "window": {
         "backgroundTextStyle": "light",
@@ -30,29 +30,28 @@
         "navigationBarTitleText": "Weixin",
         "navigationBarTextStyle": "black"
     },
-    "style": "v2",
     "navigationBarBackgroundColor": "#ededed",
     "sitemapLocation": "sitemap.json",
     "tabBar": {
-        "borderStyle":"white",
+        "borderStyle": "black",
         "list": [
             {
                 "pagePath": "pages/index/index",
-                "iconPath": "pages/image/2/home.png",
+                "iconPath": "pages/image/2/nav/home.png",
                 "text": "首页",
-                "selectedIconPath": "pages/image/2/home2.png"
+                "selectedIconPath": "pages/image/2/nav/home.png"
             },
             {
-                "pagePath": "pages/rw/rw",
+                "pagePath": "pages/task/task",
                 "text": "工作",
-                "iconPath": "pages/image/2/work.png",
-                "selectedIconPath": "pages/image/2/work2.png"
+                "iconPath": "pages/image/2/nav/work.png",
+                "selectedIconPath": "pages/image/2/nav/work.png"
             },
             {
-                "pagePath": "pages/logs/logs",
+                "pagePath": "pages/my/my",
                 "text": "我的",
-                "iconPath": "pages/image/2/my.png",
-                "selectedIconPath": "pages/image/2/my2.png"
+                "iconPath": "pages/image/2/nav/user.png",
+                "selectedIconPath": "pages/image/2/nav/user.png"
             }
         ]
     },
@@ -72,5 +71,18 @@
             "version": "1.0.9",
             "provider": "wx76a9a06e5b4e693e"
         }
-    }
+    },
+    "usingComponents": {
+        "van-button": "@vant/weapp/button/index",
+        "van-uploader": "@vant/weapp/uploader/index",
+        "van-row": "@vant/weapp/row/index",
+        "van-col": "@vant/weapp/col/index",
+        "van-field": "@vant/weapp/field/index",
+        "van-calendar": "@vant/weapp/calendar/index",
+        "van-steps": "@vant/weapp/steps/index",
+        "van-icon": "@vant/weapp/icon/index",
+        "van-circle": "@vant/weapp/circle/index",
+        "van-toast": "@vant/weapp/toast/index"
+      }
+     
 }

@@ -14,7 +14,7 @@ Page({
     },
     onLoad: function () {
         wx.switchTab({
-          url: '/pages/rw/rw'
+            url: '/pages/rw/rw'
         })
     },
     onShow: function (e) {

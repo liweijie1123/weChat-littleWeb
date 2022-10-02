@@ -1,4 +1,2 @@
 <!--pages/cd/cd.wxml-->
-<button type="primary" size="default" bindtap='getLocation'>打开地图选择位置</button>
-<text>{{address}}</text>
-<text>{{name}}</text>
+<text>pages/cd/cd.wxml</text>

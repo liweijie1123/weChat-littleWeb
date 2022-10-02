@@ -1,0 +1,53 @@
+page {
+    background-color: #fafafa;
+  }
+.index {
+    margin: 10px;
+    position: relative;
+    top: -50px;
+}
+.head {
+    height: 50px;
+    padding: 10px;
+    background-color: white;
+    color: #333333;
+    border-radius: 10px;
+    padding-bottom:30px ;
+
+}
+.task {
+    margin-top:5px ;
+    padding:20px ;
+    background-color: white;
+    border-radius: 10px 10px 0 0;
+}
+image {
+    height: 45px;
+    width: 32px;
+}
+.date {
+    font-size: 20px;
+    font-weight: bold;
+}
+.rubbish {
+    font-size: 18px;
+}
+.task_1 {
+    background-color: white;
+    border-radius:0 0 10px 10px;
+    display: flex;
+    justify-content: center;
+    padding: 15px 15px 15px 15px;
+}
+.foot {
+    margin-top: 5px;
+}
+#van-toast{
+    z-index: 999;
+}
+.bg {
+    height: 200px;
+    background-image: url('https://pic4.zhimg.com/v2-ab3dbd003b38d85a3af24b05caffde11_r.jpg?source=1940ef5c');
+    background-size: cover;
+    
+}

@@ -1,0 +1,55 @@
+page {
+    background-color: #ededed;
+  }
+.calendar {
+    --calendar-height: 500px;
+}
+.before {
+    width: 15px;
+    height: 15px;
+    opacity: 0.4;
+}
+.after{
+    width: 15px;
+    height: 15px;
+    opacity: 0.4;
+}
+.index {
+    position: relative;
+    top:-80px;
+    margin: 15px;
+    padding: 10px;
+    background-color: white;
+    border-radius:10px ;
+}
+.nav {
+    margin: 5px;
+}
+.cout-day {
+  
+    font-size: 16px;
+    margin-top: 10px;
+    color: #333333;
+}
+.bg {
+    height: 200px;
+    background-image: url('https://img1.imgtp.com/2022/09/30/pCJ1OgTO.png');
+    background-size: cover;
+    
+}
+.len{
+    height: 2px;
+    width: 20px;
+    background-color: #07c160;
+    margin: 10px 0 10px 0;
+    border-radius: 999px;
+}
+.img {
+    display: flex;
+    position: relative;
+    top:-95px;
+    height: 16px;
+    flex-direction: row-reverse;
+    margin-right: 20px;
+    
+}

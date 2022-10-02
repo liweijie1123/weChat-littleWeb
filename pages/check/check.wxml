@@ -1,0 +1,34 @@
+<!-- pages/Calendar/Calendar.wxml -->
+<!-- 打卡日历页面 -->
+
+
+
+<view class="bg">
+</view>
+<view class="index">
+    <view class="cout-day">
+        <span>已打卡</span>
+        <span>{{checkDay}}</span>
+        <span>天</span>
+        <view class="len"></view>
+    </view>
+    <view class="img" bindtap="back">
+            <image style="height: 72px;width: 72px;" src="../image/tack.svg"></image>
+        </view>
+    <view class="nav">
+        <van-row>
+            <van-col span="1" bindtap="before">
+                <image class="before" src="../image/check/before.svg"></image>
+            </van-col>
+            <van-col span="1" offset="22" bindtap="after">
+                <image class="after" src="../image/check/next.svg"></image>
+            </van-col>
+        </van-row>
+    </view>
+    <view class="date">
+
+        <van-toast id="van-toast" />
+        <van-calendar poppable="{{ false }}" show-confirm="{{ false }}" class="calendar" title="考勤打卡" color="#31B404" default-date="{{checkDay}}" show="{{ show }}" min-date="{{ minDate }}" max-date="{{ maxDate }}" show-subtitle="{{false}}" formatter="{{ formatter }}" bind:select="selectDate" />
+    </view>
+
+</view>

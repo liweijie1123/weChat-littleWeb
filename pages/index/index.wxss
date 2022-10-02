@@ -1,73 +1,95 @@
 /**index.wxss**/
 .userinfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: #aaa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #aaa;
+}
+
+page {
+    background-color: #ededed;
 }
 
 .userinfo-avatar {
-  overflow: hidden;
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+    overflow: hidden;
+    width: 128rpx;
+    height: 128rpx;
+    margin: 20rpx;
+    border-radius: 50%;
 }
 
 .usermotto {
-  margin-top: 200px;
+    margin-top: 200px;
 }
+
 /*设置样式*/
-.cla{
-  margin-top: 100rpx;
-  display: flex;
-  flex-wrap: wrap;
-  /* border-left: 1rpx solid #efefef;
-  border-top: 1rpx solid #efefef; */
+.cla {
+    position: relative;
+    top:-130px;
+    background-color: white;
+    margin: 150rpx 30rpx 0 30rpx;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0 20px 0;
+    border-radius: 5px;
 }
 
-.btn{
-  width: 33.33%;
-  background-color: rgb(255, 255, 255);
-  color: rgb(112, 112, 112);
-  height: 200rpx;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  /* border-right: 2rpx solid #efefef;
+.btn {
+    width: 33.33%;
+    background-color: rgb(255, 255, 255);
+    color: rgb(112, 112, 112);
+    height: 200rpx;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border-right: 2rpx solid #efefef;
   border-bottom: 2rpx solid #efefef;  */
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
-.kq{
-  width: 100rpx;
-  height: 100rpx;
+
+.kq {
+    width: 100rpx;
+    height: 100rpx;
 }
-.size{
-  width: 100%;
+
+.size {
+    width: 100%;
 }
-.logo{
-  float: left;
-  width: 50rpx;
-  height: 50rpx;
-  margin-top: 160rpx;
-  margin-left: 250rpx;
+
+.logo {
+    float: left;
+    width: 50rpx;
+    height: 50rpx;
+    margin-top: 160rpx;
+    margin-left: 250rpx;
 }
-.swz{
-  float: right;
-  margin-top: 165rpx;
-  margin-right: 200rpx;
-  color: rgb(119, 119, 119);
+
+.swz {
+    float: right;
+    margin-top: 165rpx;
+    margin-right: 200rpx;
+    color: rgb(119, 119, 119);
 
 }
-view>image {
-  opacity: 0.6;
-}
+
 swiper {
-  width: 96%;
-  border-bottom: 1px solid rgb(204, 202, 202);
-  border-bottom-left-radius: 50rpx;
-  border-bottom-right-radius: 50rpx;
-  overflow: hidden;
-  margin: 20rpx auto;
+    width: 100%;
+    border-bottom: 1px solid rgb(204, 202, 202);
+    /* border-bottom-left-radius: 20rpx;
+    border-bottom-right-radius: 20rpx; */
+    overflow: hidden;
+
+}
+.map {
+    height: 250px;
+    position: relative;
+    top:-190px;
+    background-color: white;
+    margin: 150rpx 30rpx 0 30rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border-radius: 5px;
 }

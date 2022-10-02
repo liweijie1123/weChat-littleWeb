@@ -1,7 +1,7 @@
 <!--index.wxml-->
 <!-- <image src='/pages/image/4.png' class='size'></image> -->
 <view>
-<swiper style="height:600rpx" autoplay="true" interval="4000" indicator-dots="true" circular="true" indicator-color="white" indicator-active-color="grey">
+<swiper style="height:550rpx" autoplay="true" interval="4000" indicator-dots="true" circular="true" indicator-color="white" indicator-active-color="grey">
   <swiper-item>
     <image src='https://s2.loli.net/2022/03/28/14eCpavxIJlTbfX.jpg' style="width: 100%;height: 600rpx;"></image>
   </swiper-item>
@@ -18,23 +18,28 @@
 
 <view class="cla">
 <view class="btn">
-  <image src="/pages/image/3/job.png" class="kq" bindtap="goto1"></image>
+  <image src="/pages/image/2/job.svg" class="kq" bindtap="goto1"></image>
   <text>考勤</text>
 </view>
 
-<view class="btn"><image src="/pages/image/3/msg.png" class="kq" bindtap="goto3"></image>
+<view class="btn"><image src="/pages/image/2/msg.svg" class="kq" bindtap="goto3"></image>
   <text>消息</text></view>
-<view class="btn"><image src="/pages/image/3/map.png" class="kq" bindtap="goto4"></image>
+<view class="btn"><image src="/pages/image/3/map.svg" class="kq" bindtap="goto4"></image>
   <text>导航</text></view>
   
-<view class="btn"><image src="/pages/image/3/feedback.png" class="kq" bindtap="goto5"></image>
+<view class="btn"><image src="/pages/image/2/feedback.svg" class="kq" bindtap="goto5"></image>
   <text>反馈</text></view>
-<view class="btn"><image src="/pages/image/3/setting.png" class="kq" bindtap="goto6"></image>
+<view class="btn"><image src="/pages/image/3/setting.svg" class="kq" bindtap="goto6"></image>
   <text>设置</text></view>
-  <view class="btn"><image src="/pages/image/3/help.png" class="kq" bindtap="goto2"></image>
+  <view class="btn"><image src="/pages/image/3/help.svg" class="kq" bindtap="goto2"></image>
   <text>帮助</text></view>
 </view>
 
+<view class="map">
+    <map id="map" longitude="120.298501" latitude="30.41875" scale="14" show-location
+  style="width: 100%; height: 100%;"></map>
+
+</view>
 <!-- <view style="width: 100%; margin-top: 10px;">
   <image src='/pages/image/logo.png' class='logo'></image>
   <text class="swz">守卫者protector</text>

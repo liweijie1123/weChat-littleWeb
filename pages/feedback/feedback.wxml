@@ -1,0 +1,33 @@
+<!--pages/fk/fk.wxml-->
+<view class="index">
+    <view class="head">
+        <van-row>
+            <van-col span="7">
+                <text>问题和意见</text>
+                <text style="color: red;">*</text>
+            </van-col>
+            <van-col span="6" offset="11" style="text-align:end;"><text>{{length}}/100</text></van-col>
+        </van-row>
+    </view>
+    <view class="input">
+        <van-cell-group>
+            <van-field bind:change="onchange" value="{{ message }}" type="textarea" placeholder="{{text}}" autosize border="{{false}}" maxlength="100" />
+        </van-cell-group>
+    </view>
+    <view class="image">
+    <view>
+        <text>图片</text>
+        <text>*</text>
+    </view>
+    <view>
+           <view class="imgContant">
+        <van-uploader accept="image" max-count="1" bind:after-read="afterRead"  file-list="{{ fileList }}" max-count="9" bind:delete="Delete"/>
+    </view>
+
+    </view>
+    </view>
+    <view class="post">
+        <van-button type="primary" size = "large">提交</van-button>
+    </view>
+
+</view>
