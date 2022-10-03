@@ -20,8 +20,55 @@ Page({
       'withSubscriptions': true,
       'Navigation': 'plugin://routePlan/index?key=' + key + '&referer=' + referer + '&endPoint=' + endPoint1
     },
-    latitude:'',
-    longitude:'',
+    longitude: 120.295509, //地图界面中心的经度
+    latitude: 30.414387, //地图界面中心的纬度
+    markers: [ //标志点的位置
+      //位置0-桔子水晶酒店
+      {
+        id: 0,
+        iconPath: "/pages/image/dw1.png",
+        latitude: 30.414321,
+        longitude: 120.307597,
+        width: 28,
+        height: 32
+      },
+      //位置1
+      {
+        id: 1,
+        iconPath: "/pages/image/dw1.png",
+        latitude: 30.424497,
+        longitude: 120.301544,
+        width: 28,
+        height: 32
+      },
+      //位置2
+      {
+        id: 2,
+        iconPath: "/pages/image/dw1.png",
+        latitude: 30.417802,
+        longitude: 120.294006,
+        width: 28,
+        height: 32
+      },
+      //位置3
+      {
+        id: 3,
+        iconPath: "/pages/image/dw1.png",
+        latitude: 30.426932,
+        longitude: 120.293292,
+        width: 28,
+        height: 32
+      },
+      //位置4
+      {
+        id: 4,
+        iconPath: "/pages/image/dw1.png",
+        latitude: 30.414641,
+        longitude: 120.298325,
+        width: 28,
+        height: 32
+      },
+    ],
     swiperCurrent: 0,
     gridlist: [],
     i: 'come',

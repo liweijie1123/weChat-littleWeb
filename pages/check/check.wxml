@@ -4,6 +4,7 @@
 
 
 <view class="bg">
+    <text class="back"  bindtap="back"> 返回</text>
 </view>
 <view class="index">
     <view class="cout-day">
@@ -12,7 +13,7 @@
         <span>天</span>
         <view class="len"></view>
     </view>
-    <view class="img" bindtap="back">
+    <view class="img">
             <image style="height: 72px;width: 72px;" src="../image/tack.svg"></image>
         </view>
     <view class="nav">

@@ -53,3 +53,11 @@ page {
     margin-right: 20px;
     
 }
+.back {
+    position: relative;
+    top: 60px;
+    margin: 20px;
+    color: #ffffff;
+    opacity: 0.6;
+    font-size: medium;
+}

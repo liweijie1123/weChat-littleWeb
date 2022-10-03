@@ -1,5 +1,7 @@
+
 <view class="bg">
-    </view>
+</view>
+
 <view class="index">
     <van-toast id="van-toast" />
     <view class="head">
