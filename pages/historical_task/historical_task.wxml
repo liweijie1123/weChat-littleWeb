@@ -1,0 +1,25 @@
+<view class="bg">
+    <text class="back"  bindtap="back"> 返回</text>
+
+</view>
+
+<viwe class="index">
+    <view class="m-mainBox">
+        <text class="title">历史任务</text>
+        <view  class="tr greenColor" style="border-radius: 5px 5px 0  0;">
+            <view class="td" wx:for="{{title}}" wx:key="index">{{item}}</view>
+        </view>
+    <block wx:for="{{historyTask}}" wx:key="index">
+        <view class="tr bg-g" wx:if="{{index %2 ===0}}" bindtap="goto"> 
+            <view class="td">{{item.date}}</view>
+            <view class="td">{{item.street}}</view>
+            <view class="td">{{item.type}}</view>
+        </view>
+        <view class="tr" wx:else bindtap="goto">
+            <view class="td">{{item.date}}</view>
+            <view class="td">{{item.street}}</view>
+            <view class="td">{{item.type}}</view>
+        </view>
+    </block>
+    </view>
+</viwe>
