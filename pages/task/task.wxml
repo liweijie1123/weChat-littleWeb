@@ -2,7 +2,7 @@
 <view class="bg">
 </view>
 
-<view class="index">
+<view class="index" bindtouchstart="startEvent" bindtouchend="endEvent">
     <van-toast id="van-toast" />
     <view class="head">
         <van-row>

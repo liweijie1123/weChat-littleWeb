@@ -8,6 +8,7 @@ Page({
         maxDate: '',
         year: '',
         month: '',
+        startPageX: 0,
         formatter(day){
             const date  =day.date.getDate()
             day.text = date
@@ -23,6 +24,33 @@ Page({
         checkDay:0
         
     },
+    startEvent(event) {
+        if (event.changedTouches[0].pageX) {
+          this.data.startPageX = event.changedTouches[0].pageX
+        } else {
+          this.data.startPageX = event.changedTouches[0].x
+        }
+      },
+      // 滑动手势结束事件
+      endEvent(event) {
+        let endPageX = 0
+        if (event.changedTouches[0].pageX) {
+          endPageX = event.changedTouches[0].pageX
+        } else {
+          endPageX = event.changedTouches[0].x
+        }
+        const moveX = endPageX - this.data.startPageX
+        if (Math.abs(moveX) < 30) return
+        if (moveX > 0) {
+          // 右滑
+          this.before()
+         console.log("11") //这里写你的右滑方法
+        } else {
+          // 左滑
+          this.after()
+          console.log("22")   //这里写你的左滑方法
+        }
+      },
     before: function () {
         const {
             year

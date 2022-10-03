@@ -16,7 +16,7 @@
 
 
 
-<view class="cla">
+<view class="cla" bindtouchstart="startEvent" bindtouchend="endEvent">
 <view class="btn">
   <image src="/pages/image/2/job.svg" class="kq" bindtap="goto1"></image>
   <text>考勤</text>

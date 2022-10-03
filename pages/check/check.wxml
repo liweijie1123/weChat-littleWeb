@@ -26,7 +26,7 @@
             </van-col>
         </van-row>
     </view>
-    <view class="date">
+    <view class="date" bindtouchstart="startEvent" bindtouchend="endEvent">
 
         <van-toast id="van-toast" />
         <van-calendar poppable="{{ false }}" show-confirm="{{ false }}" class="calendar" title="考勤打卡" color="#31B404" default-date="{{checkDay}}" show="{{ show }}" min-date="{{ minDate }}" max-date="{{ maxDate }}" show-subtitle="{{false}}" formatter="{{ formatter }}" bind:select="selectDate" />

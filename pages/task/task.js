@@ -53,6 +53,37 @@ Page({
 
 
   },
+  startEvent(event) {
+    if (event.changedTouches[0].pageX) {
+      this.data.startPageX = event.changedTouches[0].pageX
+    } else {
+      this.data.startPageX = event.changedTouches[0].x
+    }
+  },
+  // 滑动手势结束事件
+  endEvent(event) {
+    let endPageX = 0
+    if (event.changedTouches[0].pageX) {
+      endPageX = event.changedTouches[0].pageX
+    } else {
+      endPageX = event.changedTouches[0].x
+    }
+    const moveX = endPageX - this.data.startPageX
+    if (Math.abs(moveX) < 30) return
+    if (moveX > 0) {
+      // 右滑
+      wx.reLaunch({
+        url:'/pages/index/index' ,
+    })
+     console.log("11") //这里写你的右滑方法
+    } else {
+      // 左滑
+      wx.reLaunch({
+        url:'/pages/my/my' ,
+    })
+      console.log("22")   //这里写你的左滑方法
+    }
+  },
   history: function () {
     wx.navigateTo({
       url: this.data.urls['history'],

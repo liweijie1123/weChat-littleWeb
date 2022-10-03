@@ -24,7 +24,34 @@ Page({
     imgs: [],
 
   },
+  startEvent(event) {
+    if (event.changedTouches[0].pageX) {
+      this.data.startPageX = event.changedTouches[0].pageX
+    } else {
+      this.data.startPageX = event.changedTouches[0].x
+    }
+  },
+  // 滑动手势结束事件
+  endEvent(event) {
+    let endPageX = 0
+    if (event.changedTouches[0].pageX) {
+      endPageX = event.changedTouches[0].pageX
+    } else {
+      endPageX = event.changedTouches[0].x
+    }
+    const moveX = endPageX - this.data.startPageX
+    if (Math.abs(moveX) < 30) return
+    if (moveX > 0) {
+      // 右滑
+      wx.reLaunch({
+        url:'/pages/task/task' ,
+    })
+     console.log("11") //这里写你的右滑方法
+    } else {
 
+      console.log("22")   //这里写你的左滑方法
+    }
+  },
   onReady: function () {
     console.log("123")
     var that = this
