@@ -31,43 +31,7 @@ Page({
         longitude: 120.307597,
         width: 28,
         height: 32
-      },
-      //位置1
-      {
-        id: 1,
-        iconPath: "/pages/image/dw1.png",
-        latitude: 30.424497,
-        longitude: 120.301544,
-        width: 28,
-        height: 32
-      },
-      //位置2
-      {
-        id: 2,
-        iconPath: "/pages/image/dw1.png",
-        latitude: 30.417802,
-        longitude: 120.294006,
-        width: 28,
-        height: 32
-      },
-      //位置3
-      {
-        id: 3,
-        iconPath: "/pages/image/dw1.png",
-        latitude: 30.426932,
-        longitude: 120.293292,
-        width: 28,
-        height: 32
-      },
-      //位置4
-      {
-        id: 4,
-        iconPath: "/pages/image/dw1.png",
-        latitude: 30.414641,
-        longitude: 120.298325,
-        width: 28,
-        height: 32
-      },
+      }
     ],
     swiperCurrent: 0,
     gridlist: [],
@@ -101,7 +65,7 @@ Page({
       endPageX = event.changedTouches[0].x
     }
     const moveX = endPageX - this.data.startPageX
-    if (Math.abs(moveX) < 30) return
+    if (Math.abs(moveX) < 100) return
     if (moveX > 0) {
       // 右滑
    
@@ -114,6 +78,7 @@ Page({
       console.log("22")   //这里写你的左滑方法
     }
   },
+
   goto1: function () {
     wx.navigateTo({
       url: this.data.urls['sign']
@@ -142,9 +107,10 @@ Page({
     //   url: '/pages/sz/sz',
     // })
   },
-  onLoad(){
+  onLoad:  function (){
     var {latitude} = this.data
     var {longitude} = this.data
+    console.log(this.data.markers)
     wx.getLocation({
        
         type: 'wgs84',
@@ -159,6 +125,36 @@ Page({
            latitude:latitude,
            longitude:longitude
        })
-  }
+       this.showPoint()
+  },
+  onShow:  function (){
+    this.showPoint()
+  },
+  showPoint(){
 
+    var app = getApp();
+    const {
+        pointList
+    } = app.globalData
+    var list = markersPoint(pointList)
+    this.setData({
+        text: pointList,
+        markers:list
+    })
+
+  }
 })
+let markersPoint=(pointList)=>{
+    var newList=[]
+    pointList.map((item,i)=>{
+        newList.push({
+            id:i,
+            iconPath:`../image/f${i+1}.png`,
+            latitude: item.latitude,
+            longitude: item.longitude,
+            width: 28,
+            height: 32
+        })
+    })
+    return newList
+}

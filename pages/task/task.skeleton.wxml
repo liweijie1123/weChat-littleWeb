@@ -1,0 +1,147 @@
+<!--
+此文件为开发者工具生成，生成时间: 2022/10/3下午10:32:06
+使用方法：
+在 D:\垃圾分类ui\司机端ap1\司机端ap\pages\task\task.wxml 引入模板
+
+```
+<import src="task.skeleton.wxml"/>
+<template is="skeleton" wx:if="{{loading}}" />
+```
+
+在 D:\垃圾分类ui\司机端ap1\司机端ap\pages\task\task.wxss 中引入样式
+```
+@import "./task.skeleton.wxss";
+```
+
+更多详细信息可以参考文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/skeleton.html
+-->
+<template name="skeleton">
+  <view class="sk-container">
+    <view class="bg sk-image"></view>
+    <view class="index">
+      <view is="miniprogram_npm/@vant/weapp/toast/index" id="van-toast">
+        <view is="miniprogram_npm/@vant/weapp/transition/index"></view>
+      </view>
+      <view class="head">
+        <view is="miniprogram_npm/@vant/weapp/row/index">
+          <view class="van-row row-index--van-row sk-pseudo sk-pseudo-circle" style="true">
+            <view is="miniprogram_npm/@vant/weapp/col/index">
+              <view class=" van-col col-index--van-col van-col--4 col-index--van-col--4" style="true">
+                <image class="sk-image"></image>
+              </view>
+            </view>
+            <view is="miniprogram_npm/@vant/weapp/col/index">
+              <view class=" van-col col-index--van-col van-col--7 col-index--van-col--7" style="true">
+                <view class="date sk-transparent sk-text-14-2857-951 sk-text">12月13日</view>
+                <view class="street sk-transparent sk-text-14-2857-601 sk-text">临平街道</view>
+              </view>
+            </view>
+            <view is="miniprogram_npm/@vant/weapp/col/index" style="text-align:center; display: flex; justify-content: center;">
+              <view class=" van-col col-index--van-col van-col--16 col-index--van-col--16 van-col--offset-10 col-index--van-col--offset-10" style="true">
+                <image class="sk-image"></image>
+                <view class="rubbish sk-transparent sk-text-14-2857-1 sk-text" style="background-position-x: 50%;">厨余垃圾</view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="task" style="text-align: center;">
+        <view is="miniprogram_npm/@vant/weapp/steps/index">
+          <view class=" van-steps steps-index--van-steps van-steps--vertical steps-index--van-steps--vertical">
+            <view class="van-step__wrapper steps-index--van-step__wrapper">
+              <view class="van-step steps-index--van-step van-step--vertical steps-index--van-step--vertical van-step--inactive steps-index--van-step--inactive van-hairline steps-index--van-hairline sk-pseudo sk-pseudo-circle" data-index="0" style="color: #969799">
+                <view class="van-step__title steps-index--van-step__title" style="true">
+                  <view class="sk-transparent sk-text-11-1111-427 sk-text" style="background-position-x: 50%;">临平公园</view>
+                  <view></view>
+                </view>
+                <view class="van-step__circle-container steps-index--van-step__circle-container">
+                  <view class="van-step__circle steps-index--van-step__circle" style="background-color: #969799"></view>
+                </view>
+                <view class="van-step__line steps-index--van-step__line" style="background-color: #969799"></view>
+              </view>
+              <view class="van-step steps-index--van-step van-step--vertical steps-index--van-step--vertical van-step--inactive steps-index--van-step--inactive van-hairline steps-index--van-hairline sk-pseudo sk-pseudo-circle" data-index="1" style="color: #969799">
+                <view class="van-step__title steps-index--van-step__title" style="true">
+                  <view class="sk-transparent sk-text-11-1111-820 sk-text" style="background-position-x: 50%;">购物中心</view>
+                  <view></view>
+                </view>
+                <view class="van-step__circle-container steps-index--van-step__circle-container">
+                  <view class="van-step__circle steps-index--van-step__circle" style="background-color: #969799"></view>
+                </view>
+                <view class="van-step__line steps-index--van-step__line" style="background-color: #969799"></view>
+              </view>
+              <view class="van-step steps-index--van-step van-step--vertical steps-index--van-step--vertical van-step--inactive steps-index--van-step--inactive van-hairline steps-index--van-hairline sk-pseudo sk-pseudo-circle" data-index="2" style="color: #969799">
+                <view class="van-step__title steps-index--van-step__title" style="true">
+                  <view class="sk-transparent sk-text-11-1111-545 sk-text" style="background-position-x: 50%;">武陵社区</view>
+                  <view></view>
+                </view>
+                <view class="van-step__circle-container steps-index--van-step__circle-container">
+                  <view class="van-step__circle steps-index--van-step__circle" style="background-color: #969799"></view>
+                </view>
+                <view class="van-step__line steps-index--van-step__line" style="background-color: #969799"></view>
+              </view>
+              <view class="van-step steps-index--van-step van-step--vertical steps-index--van-step--vertical van-step--inactive steps-index--van-step--inactive van-hairline steps-index--van-hairline sk-pseudo sk-pseudo-circle" data-index="3" style="color: #969799">
+                <view class="van-step__title steps-index--van-step__title" style="true">
+                  <view class="sk-transparent sk-text-11-1111-117 sk-text" style="background-position-x: 50%;">莱蒙商业中心</view>
+                  <view></view>
+                </view>
+                <view class="van-step__circle-container steps-index--van-step__circle-container">
+                  <view class="van-step__circle steps-index--van-step__circle" style="background-color: #969799"></view>
+                </view>
+                <view class="van-step__line steps-index--van-step__line" style="background-color: #969799"></view>
+              </view>
+              <view class="van-step steps-index--van-step van-step--vertical steps-index--van-step--vertical van-step--inactive steps-index--van-step--inactive van-hairline steps-index--van-hairline sk-pseudo sk-pseudo-circle" data-index="4" style="color: #969799">
+                <view class="van-step__title steps-index--van-step__title" style="true">
+                  <view class="sk-transparent sk-text-11-1111-373 sk-text" style="background-position-x: 50%;">人民广场</view>
+                  <view></view>
+                </view>
+                <view class="van-step__circle-container steps-index--van-step__circle-container">
+                  <view class="van-step__circle steps-index--van-step__circle" style="background-color: #969799"></view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="task_1">
+        <view is="miniprogram_npm/@vant/weapp/circle/index">
+          <view class="van-circle index--van-circle">
+            <view canvas-id="van-circle" class="van-circle__canvas index--van-circle__canvas sk-transparent sk-text-14-2857-370 sk-text sk-image" style="width: 150px;height:150px" type="true">绘图区域</view>
+            <cover-view class="van-circle__text index--van-circle__text sk-transparent sk-text-8-3333-291 sk-text" style="background-position-x: 50%;">任务已完成0%</cover-view>
+          </view>
+        </view>
+      </view>
+      <view class="foot" style="text-align: center;">
+        <view is="miniprogram_npm/@vant/weapp/button/index">
+          <button app-parameter="true" business-id="true" class="van-button button-index--van-button van-button--danger button-index--van-button--danger van-button--normal button-index--van-button--normal van-button--round button-index--van-button--round sk-button sk-pseudo sk-pseudo-circle"
+            data-detail="null" form-type="true" hover-class="van-button--active hover-class" lang="true" open-type="true" send-message-img="true" send-message-path="true" send-message-title="true" session-from="true" style="true">
+            <view class="van-button__text button-index--van-button__text sk-transparent sk-text-15-0000-799 sk-text" style="background-position-x: 50%;"> 打卡 </view>
+          </button>
+        </view>
+        <view is="miniprogram_npm/@vant/weapp/row/index">
+          <view class="van-row row-index--van-row sk-pseudo sk-pseudo-circle" style="true">
+            <view is="miniprogram_npm/@vant/weapp/col/index" style="text-align: center;">
+              <view class=" van-col col-index--van-col van-col--12 col-index--van-col--12" style="true">
+                <view is="miniprogram_npm/@vant/weapp/button/index">
+                  <button app-parameter="true" business-id="true" class="van-button button-index--van-button van-button--info button-index--van-button--info van-button--normal button-index--van-button--normal van-button--round button-index--van-button--round sk-button sk-pseudo sk-pseudo-circle"
+                    data-detail="null" form-type="true" hover-class="van-button--active hover-class" lang="true" open-type="true" send-message-img="true" send-message-path="true" send-message-title="true" session-from="true" style="true">
+                    <view class="van-button__text button-index--van-button__text sk-transparent sk-text-15-0000-937 sk-text" style="background-position-x: 50%;">查看历史记录</view>
+                  </button>
+                </view>
+              </view>
+            </view>
+            <view is="miniprogram_npm/@vant/weapp/col/index" style="text-align: center;">
+              <view class=" van-col col-index--van-col van-col--12 col-index--van-col--12" style="true">
+                <view is="miniprogram_npm/@vant/weapp/button/index">
+                  <button app-parameter="true" business-id="true" class="van-button button-index--van-button van-button--info button-index--van-button--info van-button--normal button-index--van-button--normal van-button--round button-index--van-button--round sk-button sk-pseudo sk-pseudo-circle"
+                    data-detail="null" form-type="true" hover-class="van-button--active hover-class" lang="true" open-type="true" send-message-img="true" send-message-path="true" send-message-title="true" session-from="true" style="true">
+                    <view class="van-button__text button-index--van-button__text sk-transparent sk-text-15-0000-9 sk-text" style="background-position-x: 50%;">更改点位顺序</view>
+                  </button>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

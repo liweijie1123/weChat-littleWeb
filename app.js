@@ -4,6 +4,28 @@ App({
         pointList:[]
     },
     onLaunch() {
+        var point = [
+            {
+                latitude: 30.414321,
+                longitude: 120.307597,
+            },
+            {
+                latitude: 30.424497,
+                longitude: 120.301544,
+            },
+            {
+                latitude: 30.417802,
+                longitude: 120.294006,
+            },
+            {
+                latitude: 30.426932,
+                longitude: 120.293292,
+            },
+            {
+                latitude: 30.414641,
+                longitude: 120.298325,
+            }
+        ]
         var pointList = []
         wx.request({
             method: 'POST',
@@ -18,19 +40,21 @@ App({
                 const {
                     data
                 } = res.data
-                data.map((item) => {
+                console.log(JSON.stringify(data))
+                data.forEach((item,i) => {
                     pointList.push({
                         text: item.site_name,
-                        id: item.site_id
+                        id: item.site_id,
+                        latitude:point[i].latitude,
+                        longitude:point[i].longitude
                     })
                 })
-            
-                
+                console.log(pointList)
             }
         })
-        pointList.push({text:"马牛逼",id:'6'})
-        pointList.push({text:"潘牛逼",id:'7'})
-        pointList.push({text:"陈牛逼",id:'8'})
+        // pointList.push({text:"马牛逼",id:'6'})
+        // pointList.push({text:"潘牛逼",id:'7'})
+        // pointList.push({text:"陈牛逼",id:'8'})
         this.globalData.pointList = pointList
         console.log(this.globalData)
     },

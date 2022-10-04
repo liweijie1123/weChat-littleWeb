@@ -40,7 +40,7 @@ Page({
           endPageX = event.changedTouches[0].x
         }
         const moveX = endPageX - this.data.startPageX
-        if (Math.abs(moveX) < 30) return
+        if (Math.abs(moveX) < 50) return
         if (moveX > 0) {
           // 右滑
           this.before()
