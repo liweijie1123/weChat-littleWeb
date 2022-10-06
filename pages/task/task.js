@@ -95,11 +95,15 @@ Page({
     })
   },
   tack:function(){
+    var app = getApp();
+    var list = app.globalData.pointList
     var listLength = this.data.steps.length
     var {active}  = this.data
     var {value} = this.data
     value+=100/listLength;
     active++
+    list[active].type=1
+    app.globalData.pointList=list
     if(active<=listLength-1){
       this.setData({
         active:active,
@@ -121,8 +125,16 @@ Page({
   },
   onShow:function(){
     var app = getApp();
+    var active = -1
+    var len = app.globalData.pointList.length
+    var value=0
+    app.globalData.pointList.map((item)=>{
+        if(item.type) {value+=100/len,active++};
+    })
     this.setData({
-      steps:app.globalData.pointList
+      steps:app.globalData.pointList,
+      value:value,
+      active:active
     })
   }
 })

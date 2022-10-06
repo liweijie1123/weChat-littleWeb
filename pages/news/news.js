@@ -25,7 +25,11 @@ Page({
         wx.navigateTo({
             url: this.data.urls['Timeout docking']
         })
-    }, goto2: function () {
+    }, back(){
+        wx.navigateBack({
+            delta: 1
+          });
+    },goto2: function () {
         wx.navigateTo({
             url: this.data.urls['Overspeed alarm']
         })

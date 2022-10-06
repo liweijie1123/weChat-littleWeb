@@ -1,0 +1,19 @@
+<!--pages/navigation.wxml-->
+<view class="bg">
+    <text class="back" bindtap="back"> 返回</text>
+</view>
+
+<view class="total">
+
+    <view class="ul">
+        <view class="img">
+            <view class="text0">您将按照如下顺序执行噢</view>
+            <image style="height: 72px;width: 72px;margin-top: -30px;" src="../image/3/map.svg"></image>
+        </view>
+        <ul>
+            <view wx:for="{{steps}}" class="item"  wx:key="index">
+                <view class="text">{{item.instruction}}</view>
+            </view>
+        </ul>
+    </view>
+</view>

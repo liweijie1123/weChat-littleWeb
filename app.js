@@ -1,9 +1,13 @@
 // app.js
+import {mapRoute} from './utils/map'
 App({
     globalData:{
-        pointList:[]
+        pointList:[],
+        mapPoint:''
     },
-    onLaunch() {
+     onLaunch() {
+         var _this=this
+        var mapobj
         var point = [
             {
                 latitude: 30.414321,
@@ -36,7 +40,7 @@ App({
             header: {
                 'content-type': 'application/json' // 默认值
             },
-            success(res) {
+            async success (res) {
                 const {
                     data
                 } = res.data
@@ -46,17 +50,17 @@ App({
                         text: item.site_name,
                         id: item.site_id,
                         latitude:point[i].latitude,
-                        longitude:point[i].longitude
+                        longitude:point[i].longitude,
+                        type:item.site_now
                     })
                 })
-                console.log(pointList)
+                pointList.sort((a,b)=>{return b.type-a.type})
+                _this.globalData.pointList = pointList
+                var mapPoint = await mapRoute(pointList)
+                _this.globalData.mapPoint=mapPoint       
             }
         })
-        // pointList.push({text:"马牛逼",id:'6'})
-        // pointList.push({text:"潘牛逼",id:'7'})
-        // pointList.push({text:"陈牛逼",id:'8'})
-        this.globalData.pointList = pointList
-        console.log(this.globalData)
+
     },
     watch: function (ctx, obj) {
         Object.keys(obj).forEach(key => {

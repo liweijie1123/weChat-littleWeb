@@ -1,5 +1,5 @@
 {
-        "pages": [
+    "pages": [
         "pages/index/index",
         "pages/my/my",
         "pages/check/check",
@@ -22,7 +22,9 @@
         "pages/router/router",
         "pages/about/about",
         "pages/news/news",
-        "pages/help/help"
+        "pages/help/help",
+        "pages/navigation/navigation"
+    
     ],
     "window": {
         "backgroundTextStyle": "light",
@@ -83,6 +85,5 @@
         "van-icon": "@vant/weapp/icon/index",
         "van-circle": "@vant/weapp/circle/index",
         "van-toast": "@vant/weapp/toast/index"
-      }
-     
+    }
 }

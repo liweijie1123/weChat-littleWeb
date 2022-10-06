@@ -18,8 +18,9 @@ Page({
       'notice': '/pages/news/news',
       'feedback': '/pages/feedback/feedback',
       'withSubscriptions': true,
-      'Navigation': 'plugin://routePlan/index?key=' + key + '&referer=' + referer + '&endPoint=' + endPoint1
+      'Navigation': '/pages/navigation/navigation'
     },
+    polyline:[],
     longitude: 120.295509, //地图界面中心的经度
     latitude: 30.414387, //地图界面中心的纬度
     markers: [ //标志点的位置
@@ -31,7 +32,8 @@ Page({
         longitude: 120.307597,
         width: 28,
         height: 32
-      }
+      },
+     
     ],
     swiperCurrent: 0,
     gridlist: [],
@@ -129,13 +131,26 @@ Page({
   },
   onShow:  function (){
     this.showPoint()
+    this.shwoline()
+  },
+  shwoline(){
+    var app = getApp();
+    const {mapPoint} = app.globalData
+    console.log()
+    this.setData({
+        polyline: [{
+            points: app.globalData.mapPoint.pointline,
+            color: '#00FF00',
+            width: 3
+          }]
+    })
   },
   showPoint(){
 
     var app = getApp();
-    const {
-        pointList
-    } = app.globalData
+    var pointList = app.globalData.pointList.filter((item)=>{
+        return !item.type
+   })
     var list = markersPoint(pointList)
     this.setData({
         text: pointList,

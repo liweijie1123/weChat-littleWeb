@@ -1,5 +1,6 @@
 var QQMapWX = require('../../qqmap-wx-jssdk');
 var qqmapsdk;
+import {mapRoute} from '../../utils/map'
 var x, y, x1, y1, x2, y2, index, currindex, n, yy;
 var arr, arr1;
 Page({
@@ -23,61 +24,32 @@ Page({
             height: 32
           }]
     },
-    directionPoint(list){
-        var listlen = list.length
-        var _this = this
-        var config = {
-            mode: 'driving',
-            from: '',
-            to: '',
-            waypoints:'',
-            success: function (res) {
-                var ret = res;
-                var coors = ret.result.routes[0].polyline,
-                    pl = [];
-                var kr = 1000000;
-                for (var i = 2; i < coors.length; i++) {
-                    coors[i] = Number(coors[i - 2]) + Number(coors[i]) / kr;
-                }
-                for (var i = 0; i < coors.length; i += 2) {
-                    pl.push({
-                        latitude: coors[i],
-                        longitude: coors[i + 1]
-                    })
-                }
-                _this.setData({
-                    polyline: [{
-                      points: pl,
-                      color: '#00FF00',
-                      width: 3
-                    }]
-                  })
-                }
-        }
-        config.from={
-            latitude: list[0].latitude,
-            longitude: list[0].longitude,
-        }
-        config.to={
-            latitude: list[listlen-1].latitude,
-            longitude: list[listlen-1].longitude,
-        }
-        config.waypoints=wayPoints(list)
-        qqmapsdk.direction(config)
+    directionPoint: async function (list){
+        var app = getApp()
+        let res  = await mapRoute(list)
+        app.globalData.mapPoint = res
+        this.setData({
+            polyline: [{
+                points: res.pointline,
+                color: '#00FF00',
+                width: 3
+              }]
+        })
     },
     onShow:  function () {
         var _this = this;
         // Taro.navigateBack() // 或者点击左上
         var app = getApp();
-        const {
-            pointList
-        } = app.globalData
+        var pointList = app.globalData.pointList.filter((item)=>{
+             return !item.type
+        })
         var list = markersPoint(pointList)
         this.setData({
             text: pointList,
             markers:list
         })
         arr1 = pointList
+        if(pointList.length>=2)
         this.directionPoint(list)
     },
     onLoad: function () {
@@ -89,9 +61,15 @@ Page({
     onReady: function () {},
     onUnload: function () {
         var app = getApp()
-        const {
+        var pointList = app.globalData.pointList.filter((item)=>{
+            return item.type
+       })
+        var {
             text
         } = this.data
+       for(var i = 0;i<pointList.length;i++){
+           text.unshift(pointList[i])
+       }
         app.globalData.pointList = text
         console.log(text)
     },
@@ -184,15 +162,13 @@ let markersPoint=(pointList)=>{
 // waypoints:'30.414321,120.307597;30.424497,120.301544;30.417802,120.294006',
 
 let wayPoints=(pointList)=>{
-    var waypointshead = ''
-    var waypointsbody = ''
-    var waypointsfoot = ''
-    var len = pointList.length
-    pointList.map((item,i)=>{
-       if(i===1) waypointshead = `${item.latitude},${item.longitude};`
-       if(i===len-2) waypointsfoot=`${item.latitude},${item.longitude}`
-       else if(i>1&&i<len-2) waypointsbody =`${item.latitude},${item.longitude};`
+    let list  = pointList
+    var wayPoint=''
+    var len = list.length
+    if(len===2) return
+    list.map((item,i)=>{
+        if(i>=1&&i<len-1) wayPoint+=`${item.latitude},${item.longitude};`
     })
- 
-    return waypointshead+waypointsbody+waypointsfoot
+    wayPoint = wayPoint.substr(0,wayPoint.length-1)
+    return wayPoint
 }
